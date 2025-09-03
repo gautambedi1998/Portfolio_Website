@@ -1,29 +1,31 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "motion/react";
+import Image from "next/image";
+import Link from "next/link";
 
 function Navigation() {
   return (
     <ul className="flex flex-col items-center gap-4 sm:flex-row md:gap-6 relative z-20">
       <li className="nav-li">
-        <a className="nav-link" href="#home">
+        <Link href="#home" className="nav-link">
           Home
-        </a>
+        </Link>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#about">
+        <Link href="#about" className="nav-link">
           About
-        </a>
+        </Link>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#work">
+        <Link href="#work" className="nav-link">
           Work
-        </a>
+        </Link>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#contact">
+        <Link href="#contact" className="nav-link">
           Contact
-        </a>
+        </Link>
       </li>
     </ul>
   );
@@ -35,22 +37,24 @@ function Navbar() {
     <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
       <div className="mx-auto c-space max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
-          <link
+          <Link
             href="/"
             className="text-xl font-bold transition-colors text-neutral-400 hover:text-white"
           >
             Gautam Bedi
-          </link>
+          </Link>
           <button
             onClick={() => {
               setisOpen(!isOpen);
             }}
             className="flex cursor-pointer text-neutral-400 hover:text-white sm:hidden"
           >
-            <img
-              src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
-              className="w-6 h-6"
-            ></img>
+            <Image
+              src={isOpen ? "/assets/close.svg" : "/assets/menu.svg"}
+              alt={isOpen ? "Close menu" : "Open menu"}
+              width={24}
+              height={24}
+            />
           </button>
           <nav className="hidden sm:flex">
             <Navigation />
