@@ -1,10 +1,12 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from "motion/react";
+import "./globals.css";
 
 function Navigation() {
   return (
     <ul className="nav-ul">
-      <li className="nav-li space-x-5 ">
+      <li className="nav-li  ">
         <a className="nav-link" href="#home">
           Home
         </a>
@@ -51,11 +53,17 @@ function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="block overflow-hidden text-center sm:hidden">
+        <motion.div
+          className="block overflow-hidden text-center sm:hidden"
+          initial={{ opacity: 0, x: -10 }}
+          animate={{ opacity: 1, x: 0 }}
+          style={{ maxHeight: "100vh" }}
+          transition={{ duration: 1 }}
+        >
           <nav className="pb-5">
             <Navigation />
           </nav>
-        </div>
+        </motion.div>
       )}
     </div>
   );
