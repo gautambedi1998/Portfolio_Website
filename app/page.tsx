@@ -1,5 +1,9 @@
-import Image from "next/image";
+import Navbar from "./components/navbar";
 
 export default function Home() {
-  return <div>We are testing</div>;
+  return (
+    <div className="container mx-auto max-w-7xl">
+      <Navbar />
+    </div>
+  );
 }
