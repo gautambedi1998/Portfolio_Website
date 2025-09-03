@@ -1,21 +1,26 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "motion/react";
-import "./globals.css";
 
 function Navigation() {
   return (
-    <ul className="nav-ul">
-      <li className="nav-li  ">
+    <ul className="flex flex-col items-center gap-4 sm:flex-row md:gap-6 relative z-20">
+      <li className="nav-li">
         <a className="nav-link" href="#home">
           Home
         </a>
+      </li>
+      <li className="nav-li">
         <a className="nav-link" href="#about">
           About
         </a>
+      </li>
+      <li className="nav-li">
         <a className="nav-link" href="#work">
           Work
         </a>
+      </li>
+      <li className="nav-li">
         <a className="nav-link" href="#contact">
           Contact
         </a>
@@ -30,12 +35,12 @@ function Navbar() {
     <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
       <div className="mx-auto c-space max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
-          <a
+          <link
             href="/"
             className="text-xl font-bold transition-colors text-neutral-400 hover:text-white"
           >
             Gautam Bedi
-          </a>
+          </link>
           <button
             onClick={() => {
               setisOpen(!isOpen);
