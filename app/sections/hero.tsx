@@ -1,3 +1,5 @@
+"use client";
+
 import HeroText from "../components/heroText";
 
 function Hero() {
