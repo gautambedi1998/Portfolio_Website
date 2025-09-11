@@ -6,6 +6,7 @@ export default function Home() {
     <div className="container mx-auto max-w-7xl">
       <Navbar />
       <Hero />
+      <section className="h-100"></section>
     </div>
   );
 }
