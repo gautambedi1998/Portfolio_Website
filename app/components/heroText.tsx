@@ -64,7 +64,7 @@ function HeroText() {
           transition={{ delay: 1 }}
           className="text-4xl font-medium"
         >
-          Hi, I'm Gautam
+          {"Hi, I'm Gautam"}
         </motion.p>
         <div>
           <motion.p
