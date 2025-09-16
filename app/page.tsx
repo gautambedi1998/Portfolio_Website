@@ -1,3 +1,4 @@
+import About from "./sections/about";
 import Hero from "./sections/hero";
 import Navbar from "./sections/navbar";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="container mx-auto max-w-7xl">
       <Navbar />
       <Hero />
+      <About />
       <section className="h-100"></section>
     </div>
   );
