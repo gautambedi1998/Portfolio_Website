@@ -23,7 +23,7 @@ function HeroText() {
           Hi I'm Gautam
         </motion.h1>
         <div className="flex flex-col items-start">
-          <motion.p
+          <motion.div
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -32,7 +32,7 @@ function HeroText() {
           >
             A Developer
             <br /> Dedicated to Crafting
-          </motion.p>
+          </motion.div>
           <motion.div
             variants={variants}
             initial="hidden"
