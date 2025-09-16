@@ -1,7 +1,6 @@
 import React from "react";
 import { FlipWords } from "./flipWords";
 import { motion } from "motion/react";
-import { Hind_Madurai } from "next/font/google";
 
 function HeroText() {
   const words = ["Secure", "Modern", "Scalable"];
@@ -20,7 +19,7 @@ function HeroText() {
           transition={{ delay: 1 }}
           className="text-4xl font-medium"
         >
-          Hi I'm Gautam
+          {"Hi I'm Gautam"}
         </motion.h1>
         <div className="flex flex-col items-start">
           <motion.div
