@@ -3,6 +3,7 @@
 import React from "react";
 import Card from "../components/card";
 import { useRef } from "react";
+import { Globe } from "../components/globe";
 
 const About = () => {
   const grid2Container = useRef<HTMLDivElement>(null);
@@ -37,12 +38,12 @@ const About = () => {
             </p>
             <Card
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
-              text="GRASP"
+              text="Next.js"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-              text="SOLID"
+              text="React"
               containerRef={grid2Container}
             />
             <Card
@@ -52,12 +53,12 @@ const About = () => {
             />
             <Card
               style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-              text="Design Principles"
+              text="Firebase"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="SRP"
+              text="Flutter"
               containerRef={grid2Container}
             />
             <Card
@@ -84,6 +85,7 @@ const About = () => {
             <p className="text-neutral-400 text-sm md:text-base text-pretty">
               Currently based in Brisbane, I am open to relocating.
             </p>
+            <Globe />
           </div>
           <figure className="absolute left-[30%] top-[10%]"></figure>
         </div>
