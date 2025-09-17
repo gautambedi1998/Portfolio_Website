@@ -5,6 +5,7 @@ import Card from "../components/card";
 import { useRef } from "react";
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/copyEmailButton";
+import { Frameworks } from "../components/frameworks";
 
 const About = () => {
   const grid2Container = useRef<HTMLDivElement>(null);
@@ -100,7 +101,19 @@ const About = () => {
           </div>
         </div>
         {/* Grid 5 */}
-        <div className="p-6 bg-gradient-to-b from-storm to-indigo rounded-2xl row-span-1 md:col-span-4 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200"></div>
+        <div className="p-6 bg-gradient-to-b from-storm to-indigo rounded-2xl row-span-1 md:col-span-4 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200">
+          <div className="z-10 w-[50%]">
+            <p className="mt-2 mb-2 text-xl">Tech Stack</p>
+            <p className="text-neutral-400 text-sm md:text-base text-pretty">
+              I specialize in a variety of languages, frameworks, and tools that
+              allow me to build robust and scalable applications
+            </p>
+          </div>
+
+          <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
+            <Frameworks />
+          </div>
+        </div>
       </div>
     </section>
   );
