@@ -1,6 +1,11 @@
+"use client";
+
 import React from "react";
+import Card from "../components/card";
+import { useRef } from "react";
 
 const About = () => {
+  const grid2Container = useRef<HTMLDivElement>(null);
   return (
     <section className="sm:px-10 px-5 lg:px-15 min-h-screen mt-20 md:mt-30  ">
       <h2 className="font-bold text-3xl md:text-4xl">About Me</h2>
@@ -23,14 +28,65 @@ const About = () => {
         </div>
         {/* Grid 2 */}
         <div className="p-6 bg-gradient-to-b from-storm to-indigo rounded-2xl row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200">
-          <div className="flex items-center justify-center w-full h-full">
+          <div
+            className="flex items-center justify-center w-full h-full"
+            ref={grid2Container}
+          >
             <p className="flex items-end text-5xl text-gray-500">
               CODE IS CRAFT
             </p>
+            <Card
+              style={{ rotate: "75deg", top: "30%", left: "20%" }}
+              text="GRASP"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "-30deg", top: "60%", left: "45%" }}
+              text="SOLID"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
+              text="Design Patterns"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "-45deg", top: "55%", left: "0%" }}
+              text="Design Principles"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "20deg", top: "10%", left: "38%" }}
+              text="SRP"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "30deg", top: "70%", left: "70%" }}
+              image="assets/logos/csharp-pink.png"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "-45deg", top: "70%", left: "25%" }}
+              image="assets/logos/dotnet-pink.png"
+              containerRef={grid2Container}
+            />
+            <Card
+              style={{ rotate: "-45deg", top: "5%", left: "10%" }}
+              image="assets/logos/blazor-pink.png"
+              containerRef={grid2Container}
+            />
           </div>
         </div>
         {/* Grid 3 */}
-        <div className="p-6 bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] rounded-2xl row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200"></div>
+        <div className="p-6 bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] rounded-2xl row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200">
+          <div className="z-10 w-[50%">
+            <p className="mt-2 mb-2 text-xl">Time Zone</p>
+            <p className="text-neutral-400 text-sm md:text-base text-pretty">
+              Currently based in Brisbane, I am open to relocating.
+            </p>
+          </div>
+          <figure className="absolute left-[30%] top-[10%]"></figure>
+        </div>
         {/* Grid 4 */}
         <div className="p-6 bg-gradient-to-b from-royal to-lavender rounded-2xl row-span-1 md:col-span-2 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200"></div>
         {/* Grid 5 */}
