@@ -29,7 +29,7 @@ const About = () => {
         {/* Grid 2 */}
         <div className="p-6 bg-gradient-to-b from-storm to-indigo rounded-2xl row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200">
           <div
-            className="flex items-center justify-center w-full h-full"
+            className="relative flex items-center justify-center w-full h-full"
             ref={grid2Container}
           >
             <p className="flex items-end text-5xl text-gray-500">

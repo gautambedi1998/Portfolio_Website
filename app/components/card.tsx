@@ -18,7 +18,7 @@ const Card = ({ text, style, image, containerRef }: cardProps) => {
       style={style}
       whileHover={{ scale: 1.05 }}
       drag
-      dragConstraints={containerRef?.current ? containerRef : undefined}
+      dragConstraints={containerRef}
       dragElastic={1}
     />
   ) : (
@@ -27,7 +27,7 @@ const Card = ({ text, style, image, containerRef }: cardProps) => {
       className="absolute px-1 py-1 text-xl text-center rounded-full ring ring-gray-700 font-extralight bg-storm w-[12rem] cursor-grab"
       whileHover={{ scale: 1.05 }}
       drag
-      dragConstraints={containerRef?.current ? containerRef : undefined}
+      dragConstraints={containerRef}
       dragElastic={1}
     >
       {text}
