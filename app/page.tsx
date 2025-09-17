@@ -2,6 +2,7 @@ import About from "./sections/about";
 import Footer from "./sections/footer";
 import Hero from "./sections/hero";
 import Navbar from "./sections/navbar";
+import UnderConstruction from "./sections/underconstruction";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <section className="h-100"></section>
+      <UnderConstruction />
       <Footer />
     </div>
   );
