@@ -1,4 +1,5 @@
 import About from "./sections/about";
+import Footer from "./sections/footer";
 import Hero from "./sections/hero";
 import Navbar from "./sections/navbar";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <About />
       <section className="h-100"></section>
+      <Footer />
     </div>
   );
 }
