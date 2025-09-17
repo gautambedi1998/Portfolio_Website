@@ -4,6 +4,7 @@ import React from "react";
 import Card from "../components/card";
 import { useRef } from "react";
 import { Globe } from "../components/globe";
+import CopyEmailButton from "../components/copyEmailButton";
 
 const About = () => {
   const grid2Container = useRef<HTMLDivElement>(null);
@@ -90,7 +91,14 @@ const About = () => {
           <figure className="absolute left-[30%] top-[10%]"></figure>
         </div>
         {/* Grid 4 */}
-        <div className="p-6 bg-gradient-to-b from-royal to-lavender rounded-2xl row-span-1 md:col-span-2 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200"></div>
+        <div className="p-6 bg-gradient-to-b from-royal to-lavender rounded-2xl row-span-1 md:col-span-2 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200">
+          <div className="flex flex-col items-center justify-center gap-5 size-full">
+            <p className="text-center mt-2 mb-2 text-xl">
+              Do you want to get in touch?
+            </p>
+            <CopyEmailButton />
+          </div>
+        </div>
         {/* Grid 5 */}
         <div className="p-6 bg-gradient-to-b from-storm to-indigo rounded-2xl row-span-1 md:col-span-4 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200"></div>
       </div>
