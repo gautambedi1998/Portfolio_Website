@@ -18,7 +18,7 @@ const Projects = () => {
 
   return (
     <section
-      className="relative sm:px-10 px-5 lg:px-15 min-h-screen mt-20 md:mt-30"
+      className="relative sm:px-10 px-5 lg:px-15 min-h-80 mt-20 md:mt-30"
       onMouseMove={handleMouseMove}
     >
       <h2 className="font-bold text-3xl md:text-4xl">My Selected Projects</h2>
