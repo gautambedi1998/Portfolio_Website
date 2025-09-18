@@ -14,38 +14,34 @@ export const mySocials = [
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "Apple Website Clone",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "Replica of Apple’s official website showcasing sleek product pages, animations, and responsive design to highlight front-end development skills.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Developed with Next.js and React for fast, SEO-friendly rendering and a modern development workflow.",
+      "Implemented pixel-perfect design using Tailwind CSS to closely match Apple’s clean aesthetic.",
+      "Added smooth scrolling, product reveal animations, and transitions with Framer Motion/GSAP for an engaging user experience.",
+      "Optimized performance with Next.js Image optimization, code-splitting, and lazy loading to achieve excellent Lighthouse scores.",
+      "Structured pages with reusable, type-safe components in TypeScript for scalability and easy maintenance.",
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/apple.png",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "Next",
+        path: "/assets/logos/next.svg",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
       },
       {
         id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
       },
     ],
   },
