@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 interface projectDetailsProps {
   title: string;
@@ -34,9 +35,9 @@ const ProjectDetails = ({
           onClick={closeModel}
           className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500"
         >
-          <img src="assets/close.svg" className="w-6 h-6" />
+          <Image src="assets/close.svg" className="w-6 h-6" alt="" />
         </button>
-        <img src={image} alt={title} className="w-full rounded-t-2xl" />
+        <Image src={image} alt={title} className="w-full rounded-t-2xl" />
         <div className="p-5">
           <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
           <p className="mb-3 font-normal text-neutral-400">{description}</p>
@@ -46,7 +47,7 @@ const ProjectDetails = ({
           <div className="flex items-center justify-between mt-4 ">
             <div className="flex gap-3">
               {tags.map((tag) => (
-                <img
+                <Image
                   key={tag.id}
                   src={tag.path}
                   alt={tag.name}
@@ -59,7 +60,7 @@ const ProjectDetails = ({
               href={href}
             >
               View Project
-              <img src="assets/arrow-up.svg" className="size-4" />
+              <Image src="assets/arrow-up.svg" className="size-4" alt="" />
             </a>
           </div>
         </div>
