@@ -57,7 +57,7 @@ export const myProjects = [
       "Built a responsive and user-friendly interface using Tailwind CSS to ensure accessibility across devices.",
       "Optimized performance and data rendering for fast and reliable user experience with real-time updates.",
     ],
-    href: "",
+    href: "https://youtu.be/ZiP8aLjcAws",
     logo: "",
     image: "/assets/projects/dashboard.png",
     tags: [
