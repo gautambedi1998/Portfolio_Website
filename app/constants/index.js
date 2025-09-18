@@ -90,7 +90,7 @@ export const myProjects = [
     ],
     href: "https://flappy-bird-game-mu.vercel.app/",
     logo: "",
-    image: "/assets/projects/flappy.png",
+    image: "/assets/projects/Flappy.png",
     tags: [
       {
         id: 1,
