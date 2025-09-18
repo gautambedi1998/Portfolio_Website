@@ -10,3 +10,137 @@ export const mySocials = [
     icon: "/assets/socials/linkedIn.svg",
   },
 ];
+
+export const myProjects = [
+  {
+    id: 1,
+    title: "Apple Website Clone",
+    description:
+      "Replica of Apple’s official website showcasing sleek product pages, animations, and responsive design to highlight front-end development skills.",
+    subDescription: [
+      "Developed with Next.js and React for fast, SEO-friendly rendering and a modern development workflow.",
+      "Implemented pixel-perfect design using Tailwind CSS to closely match Apple’s clean aesthetic.",
+      "Added smooth scrolling, product reveal animations, and transitions with Framer Motion/GSAP for an engaging user experience.",
+      "Optimized performance with Next.js Image optimization, code-splitting, and lazy loading to achieve excellent Lighthouse scores.",
+      "Structured pages with reusable, type-safe components in TypeScript for scalability and easy maintenance.",
+    ],
+    href: "https://apple-website-clone-umber.vercel.app/",
+    logo: "",
+    image: "/assets/projects/apple.png",
+    tags: [
+      {
+        id: 1,
+        name: "Next",
+        path: "/assets/logos/next.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 3,
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "MSA Training Dashboard",
+    description:
+      "Developed a Next.js dashboard for mining companies to visualize and track operational data, enabling clients to access their session data securely and monitor progress in real-time.",
+    subDescription: [
+      "Integrated Firebase to fetch, structure, and display mining data for each client dynamically.",
+      "Implemented role-based access control to ensure secure and personalized data access for different users.",
+      "Designed interactive charts and tables to present session data, progress metrics, and trends clearly.",
+      "Built a responsive and user-friendly interface using Tailwind CSS to ensure accessibility across devices.",
+      "Optimized performance and data rendering for fast and reliable user experience with real-time updates.",
+    ],
+    href: "https://youtu.be/ZiP8aLjcAws",
+    logo: "",
+    image: "/assets/projects/dashboard.png",
+    tags: [
+      {
+        id: 1,
+        name: "Next",
+        path: "/assets/logos/next.svg",
+      },
+      {
+        id: 2,
+        name: "Typescript",
+        path: "/assets/logos/typescript.svg",
+      },
+      {
+        id: 3,
+        name: "Firebase",
+        path: "/assets/logos/firebase.svg",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Flappy Bird Web Game",
+    description:
+      "A web-based Flappy Bird game built with React, featuring state management, and hosted on Vercel for public access.",
+    subDescription: [
+      "Developed the game logic and state management using React hooks to handle bird movement, collision detection, and game flow.",
+      "Implemented modular components for the bird, pipes, and game environment to ensure maintainable code structure.",
+      "Hosted the project on Vercel for easy access and sharing, enabling users to play directly in the browser.",
+    ],
+    href: "https://flappy-bird-game-mu.vercel.app/",
+    logo: "",
+    image: "/assets/projects/flappy.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 3,
+        name: "Firebase",
+        path: "/assets/logos/firebase.svg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Kids Connecting Parents",
+    description:
+      "Developed an award-winning Kids Connecting Parents app in Flutter, designed to help parents and carers who have experienced child loss connect with others in their local area for emotional support and shared experiences.",
+    subDescription: [
+      "Implemented geolocation-based search to help users find nearby parents and carers for support or offering support.",
+      "Built secure chat functionality to enable compassionate and private communication between users.",
+      "Designed a responsive and accessible interface using Flutter to provide a seamless experience across devices.",
+      "Integrated user preferences for connection options, ensuring personalized and meaningful interactions.",
+      "Contributed to an app that promotes mental health, positive social connection, and emotional support for a global community of parents.",
+    ],
+
+    href: "https://www.kidsconnectingparents.com/",
+    logo: "",
+    image: "/assets/projects/kids.png",
+    tags: [
+      {
+        id: 1,
+        name: "Flutter",
+        path: "/assets/logos/flutter.svg",
+      },
+      {
+        id: 2,
+        name: "Bloc",
+        path: "/assets/logos/bloc.png",
+      },
+      {
+        id: 3,
+        name: "Firebase",
+        path: "/assets/logos/firebase.svg",
+      },
+    ],
+  },
+];
