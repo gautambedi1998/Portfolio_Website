@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "motion/react";
-import img from "next/image";
 
 interface projectDetailsProps {
   title: string;
@@ -41,8 +40,10 @@ const ProjectDetails = ({
         <div className="p-5">
           <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
           <p className="mb-3 font-normal text-neutral-400">{description}</p>
-          {subDescription.map((desc) => (
-            <p className="mb-3 font-normal text-neutral-400">{desc}</p>
+          {subDescription.map((desc, index) => (
+            <p key={index} className="mb-3 font-normal text-neutral-400">
+              {desc}
+            </p>
           ))}
           <div className="flex items-center justify-between mt-4 ">
             <div className="flex gap-3">
