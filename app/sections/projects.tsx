@@ -18,6 +18,7 @@ const Projects = () => {
 
   return (
     <section
+      id="projects"
       className="relative sm:px-10 px-5 lg:px-15 min-h-80 mt-20 md:mt-30"
       onMouseMove={handleMouseMove}
     >

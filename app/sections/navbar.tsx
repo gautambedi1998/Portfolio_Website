@@ -23,8 +23,8 @@ function Navigation() {
         </Link>
       </li>
       <li className="nav-li">
-        <Link href="#contact" className="nav-link">
-          Contact
+        <Link href="#projects" className="nav-link">
+          Projects
         </Link>
       </li>
     </ul>

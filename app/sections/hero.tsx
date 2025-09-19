@@ -15,7 +15,10 @@ function Hero() {
   const isMobile = useMediaQuery({ maxWidth: 853 });
 
   return (
-    <section className="flex items-start justify-center md:justify-start min-h-screen overflow-hidden sm:px-10 px-5 lg:px-15">
+    <section
+      id="home"
+      className="flex items-start justify-center md:justify-start min-h-screen overflow-hidden sm:px-10 px-5 lg:px-15"
+    >
       <HeroText />
       <ParalaxBackground />
       <figure
