@@ -144,3 +144,45 @@ export const myProjects = [
     ],
   },
 ];
+
+export const experiences = [
+  {
+    title: "Web Developer Intern",
+    job: "Blue Square Tech Solutions",
+    date: "2022",
+    contents: [
+      "Built and maintained full-stack web features using Next.js, TypeScript, Firebase, Node.js, and Tailwind CSS.",
+      "Integrated REST APIs and managed MongoDB and Saleor API for e-commerce functionality.",
+      "Collaborated in an agile team using Git, GitHub, Jira, and Confluence for version control and project tracking.",
+    ],
+  },
+  {
+    title: "Software Engineer Intern",
+    job: "Deakin University",
+    date: "2022",
+    contents: [
+      "Contributed to new website features and resolved reported issues within a collaborative team environment.",
+      "Applied modern development practices to enhance performance and maintainability.",
+    ],
+  },
+  {
+    title: "Application Developer",
+    job: "Mining Skills Australia",
+    date: "2022 – 2023",
+    contents: [
+      "Designed and deployed new features for mobile applications using Flutter and the BLoC architecture, releasing updates to both the Google Play Store and Apple App Store.",
+      "Optimized application performance and maintained backend databases to ensure reliability at scale.",
+      "Developed custom web solutions with Next.js, aligning with client requirements and industry best practices.",
+    ],
+  },
+  {
+    title: "Web Developer",
+    job: "Motion Curve",
+    date: "2023 – Present",
+    contents: [
+      "Led the development of the company’s internal dashboard using Next.js and Firebase, enabling efficient data management and a seamless user experience.",
+      "Built and maintained client-facing web projects and enhanced the corporate website to improve performance, accessibility, and responsiveness.",
+      "Established best practices for version control, automated deployment, and technical documentation.",
+    ],
+  },
+];

@@ -4,6 +4,7 @@ import Hero from "./sections/hero";
 import Navbar from "./sections/navbar";
 import Projects from "./sections/projects";
 import UnderConstruction from "./sections/underconstruction";
+import WorkExperience from "./sections/workExperience";
 
 export default function Home() {
   return (
@@ -11,8 +12,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <WorkExperience />
       <Projects />
-      <UnderConstruction />
       <Footer />
     </div>
   );
