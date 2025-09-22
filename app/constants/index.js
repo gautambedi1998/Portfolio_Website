@@ -143,6 +143,28 @@ export const myProjects = [
       },
     ],
   },
+
+  {
+    id: 5,
+    title: "Disney+ Clone (In Progress)",
+    description:
+      "A modern streaming-platform clone built with Next.js, Firebase, and Tailwind CSS, featuring secure authentication and responsive UI.",
+    subDescription: [
+      "Implemented user sign-up, sign-in, and protected routes using Firebase Authentication for a production-ready login flow.",
+      "Built a responsive interface with Tailwind CSS that closely mirrors the Disney+ design and provides a polished, mobile-friendly experience.",
+      "Planned global state management with Redux to handle user data, watchlists, and future media interactions.",
+      "Deployed on Vercel for fast, server-side rendered pages and seamless updates.",
+    ],
+    href: "https://disney-plus-clone-ten-psi.vercel.app/",
+    logo: "",
+    image: "/assets/projects/disney.png",
+    tags: [
+      { id: 1, name: "Next.js", path: "/assets/logos/next.svg" },
+      { id: 2, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
+      { id: 3, name: "Firebase", path: "/assets/logos/firebase.svg" },
+      { id: 4, name: "Redux", path: "/assets/logos/redux.png" },
+    ],
+  },
 ];
 
 export const experiences = [
